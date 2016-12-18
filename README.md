@@ -22,3 +22,14 @@ All four team members make a commit that modifies this file with your name added
 3) Andrew Heyer
 
 4) Brian Lovelace
+
+
+Instructions on how to run:
+
+1) Run MUDServer.java under src/server
+
+2) (If applicable) Indicate if you would like to load a previous world
+
+3) Set a server password
+
+4) Run the client "ClientLogin.java" under src/controller
