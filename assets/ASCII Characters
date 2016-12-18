@@ -1,0 +1,36 @@
+This is the list of all items and mobs along with their character representations.
+The same characters are used for map placement in layout.xml.
+
+Items
+-----------------
+Calcium - c
+GlassCannon - g
+HiPotion - h
+Iron - i
+Kiteshield - k
+Longsword - l
+Mastersword - m
+MaxPotion - x
+MysteryPotion - j
+Polymorph - r	
+Potion - o	
+Protein - b
+SquareShield - q
+Sword - s		
+Teleporter - y		
+TreasureChest - t	
+WetNoodle - n
+WoodenShield - w	
+
+Mobs
+-----------------
+Demon - E		
+Diablo - D		
+Goblin - G
+Insect - I
+Mimic - M
+MUDProject - B
+Pikachu - U
+Rabbit - R		
+Treant - T		
+UndeadWarrior - W

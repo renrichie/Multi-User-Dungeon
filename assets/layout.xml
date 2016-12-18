@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+<!DOCTYPE WorldDef [
+<!ELEMENT WorldDef (LayoutDef, EntityDefs)>
+<!ELEMENT LayoutDef (BoardSize, RoomSize, tilesheet, charDefs)>
+<!ELEMENT BoardSize (#PCDATA)>
+<!ELEMENT RoomSize (#PCDATA)>
+<!ELEMENT tilesheet (#PCDATA)>
+<!ELEMENT charDefs (char+)>
+<!ELEMENT char (ascii, tile)>
+<!ELEMENT ascii (#PCDATA)>
+<!ELEMENT tile (name, Entities)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT Entities (entity*)>
+<!ELEMENT entity (#PCDATA)>
+<!ELEMENT EntityDefs (EntityDef+)>
+<!ELEMENT EntityDef (entityname, asciiRep)>
+<!ELEMENT entityname (#PCDATA)>
+<!ELEMENT asciiRep (#PCDATA)>
+]>
+<WorldDef>
+	<LayoutDef>
+		<BoardSize> 6 </BoardSize>
+		<RoomSize> 5 </RoomSize>
+		<tilesheet>
+	        ++++++++++++++++++++++++++++++
+	        +yr========t=+====t+i======b=+
+	        +=w==I=======#====t+==G==G==~+
+	        +sR===o=lw=+++++#+++=========+
+	        +==========+ol++==========q~~+
+	        ++++===I===+Tr++===~~~~~~~~~~+
+	        +=+========+==++==R=====o~~~~+
+	        +T+==s===+++==+++==~==~~~~~~~+
+	        +R===w=====#====#==~======~~~+
+	        +~~~~~~~=+++==+++~=~~~~~~=~~~+
+	        +t~~~====w=w=~++~~=~~~~~~===!+
+	        +=~~~==~~~~+++++~~=~~~++++#+~+
+	        +#+++==~~~=#==++~~=~~+=====+~+
+	        +=t++=l=l==+=$++~~=~~+===+++~+
+	        +===+=++++==++++~~=~~+$=$+~~~+
+	        +++#+=+++++=====~~=++++#++++++
+	        +~~===~~~~~~~~E=~~=~~~~==~~~~+
+	        +~================l~++++=~~~=+
+	        +~=~~===~~~+++++~~=~+tI#=~~==+
+	        +~=~~=~=~~~+~~++~==~++++~~===+
+	        +~==T=~=~~~+~r++~~=~~~~~===t=+
+	        +~=~=~~=~~~+~E++~o=====#===Dm+
+	        +====~~=~~++~=++~~==W==#=h===+
+	        +~==o=U=o==+~=##===~~~~~===t=+
+	        +++++~~~=+++==++~~=~~~~~~~===+
+	        +==#=======#==++~l=====W=k~==+
+	        +==++==~~~~+++++~~=====o==~~=+
+	        +=+$+======+~~++~~========~~~+
+	        +=W=+===R======#==========#Bg+
+	        ++++++++++++++++++++++++++++++
+        </tilesheet>
+        <charDefs>
+        	<char>
+        		<ascii> R </ascii>
+        		<tile>
+      				<name> Rabbit </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Rabbit</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> + </ascii>
+        		<tile>
+      				<name> Wall </name>
+      				<Entities>
+      					<entity>Wall</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> ~ </ascii>
+        		<tile>
+      				<name> Water </name>
+      				<Entities>
+      					<entity>Water</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> = </ascii>
+        		<tile>
+      				<name> Road </name>
+      				<Entities>
+      					<entity>Road</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> l </ascii>
+        		<tile>
+      				<name> Sword in Stone </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>LongSword</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> o </ascii>
+        		<tile>
+      				<name> Healing Potion </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Potion</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> w </ascii>
+        		<tile>
+      				<name> Wooden Shield </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Wooden Shield</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> t </ascii>
+        		<tile>
+      				<name> Treasure Chest </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Treasure Chest</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> E </ascii>
+        		<tile>
+      				<name> Demon </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Demon</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> D </ascii>
+        		<tile>
+      				<name> Diablo </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Diablo</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> T </ascii>
+        		<tile>
+      				<name> Treant </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Treant</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> $ </ascii>
+        		<tile>
+      				<name> Tomb </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Undead Warrior</entity>
+      					<entity>Kiteshield</entity>
+      					<entity>Mastersword</entity>
+      					<entity>Teleporter</entity>
+      					<entity>Mystery Potion</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> ! </ascii>
+        		<tile>
+      				<name> Stockpile </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Wooden Shield</entity>
+      					<entity>Potion</entity>
+      					<entity>LongSword</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> s </ascii>
+        		<tile>
+      				<name> Sword </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Sword</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> # </ascii>
+        		<tile>
+      				<name> Door </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Door</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> r </ascii>
+        		<tile>
+      				<name> Polymorph </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Polymorph</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> y </ascii>
+        		<tile>
+      				<name> Teleporter </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Teleporter</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> c </ascii>
+        		<tile>
+      				<name> Calcium </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Calcium</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> g </ascii>
+        		<tile>
+      				<name> Glass Cannon </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Glass Cannon</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> h </ascii>
+        		<tile>
+      				<name> Hi-Potion </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Hi-Potion</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> i </ascii>
+        		<tile>
+      				<name> Iron </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Iron</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> k </ascii>
+        		<tile>
+      				<name> Kiteshield </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Kiteshield</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> m </ascii>
+        		<tile>
+      				<name> Mastersword </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Mastersword</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> x </ascii>
+        		<tile>
+      				<name> Max Potion </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Max Potion</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> j </ascii>
+        		<tile>
+      				<name> Mystery Potion </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Mystery Potion</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> b </ascii>
+        		<tile>
+      				<name> Protein </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Protein</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> q </ascii>
+        		<tile>
+      				<name> Square Shield </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Square Shield</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> n </ascii>
+        		<tile>
+      				<name> Wet Noodle </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Wet Noodle</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> G </ascii>
+        		<tile>
+      				<name> Goblin </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Goblin</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> I </ascii>
+        		<tile>
+      				<name> Insect </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Insect</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> M </ascii>
+        		<tile>
+      				<name> Mimic </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Mimic</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> B </ascii>
+        		<tile>
+      				<name> MUD Project </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>MUD Project</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> U </ascii>
+        		<tile>
+      				<name> Pikachu </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Pikachu</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<char>
+        		<ascii> W </ascii>
+        		<tile>
+      				<name> Undead Warrior </name>
+      				<Entities>
+      					<entity>Road</entity>
+      					<entity>Undead Warrior</entity>
+      				</Entities> 
+        		</tile>
+        	</char>
+        	<!-- Add more! -->
+        </charDefs>
+	</LayoutDef>
+	
+	<EntityDefs>
+		<EntityDef>
+			<entityname>LongSword</entityname>
+			<asciiRep> l </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Wall</entityname>
+			<asciiRep> + </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Water</entityname>
+			<asciiRep> ~ </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Road</entityname>
+			<asciiRep> = </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Rabbit</entityname>
+			<asciiRep> r </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Potion</entityname>
+			<asciiRep> o </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Demon</entityname>
+			<asciiRep> E </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Diablo</entityname>
+			<asciiRep> D </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Treant</entityname>
+			<asciiRep> T </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Sword</entityname>
+			<asciiRep> s </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Wooden Shield</entityname>
+			<asciiRep> w </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Treasure Chest</entityname>
+			<asciiRep> t </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Door</entityname>
+			<asciiRep> # </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Polymorph</entityname>
+			<asciiRep> r </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Teleporter</entityname>
+			<asciiRep> y </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Calcium</entityname>
+			<asciiRep> c </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Glass Cannon</entityname>
+			<asciiRep> g </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Hi-Potion</entityname>
+			<asciiRep> h </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Iron</entityname>
+			<asciiRep> i </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Kiteshield</entityname>
+			<asciiRep> k </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Mastersword</entityname>
+			<asciiRep> m </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Max Potion</entityname>
+			<asciiRep> x </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Mystery Potion</entityname>
+			<asciiRep> j </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Protein</entityname>
+			<asciiRep> b </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Square Shield</entityname>
+			<asciiRep> q </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Wet Noodle</entityname>
+			<asciiRep> n </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Goblin</entityname>
+			<asciiRep> G </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Insect</entityname>
+			<asciiRep> I </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Mimic</entityname>
+			<asciiRep> M </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>MUD Project</entityname>
+			<asciiRep> B </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Pikachu</entityname>
+			<asciiRep> U </asciiRep>
+		</EntityDef>
+		<EntityDef>
+			<entityname>Undead Warrior</entityname>
+			<asciiRep> W </asciiRep>
+		</EntityDef>
+		<!-- Add more! -->
+	</EntityDefs>
+</WorldDef>
